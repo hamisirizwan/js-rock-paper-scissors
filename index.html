@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissors</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Rock - Paper - Scissors</h1>
+
+    <!-- rock -->
+     <!-- paper -->
+      <!-- scissors -->
+<h3>Select one of these</h3>
+
+<div>
+    <button onclick="playGame('rock')">Rock</button>
+    <button onclick="playGame('paper')">Paper</button>
+    <button onclick="playGame('scissors')">Scissors</button>
+</div>
+
+<div>
+    <p>User Selected <span id="userOption"></span></p>
+    <p>Computer selected <span id="computerOption"></span></p>
+    <h4 id="result"></h4>
+</div>
+
+<div>
+
+
+    <h4>User: <span id="userScore"></span></h4>
+    <h4>Computer: <span id="computerScore"></span></h4>
+</div>
+      <!-- the user is going to select one of these by clicking the relevant button -->
+
+      <!-- the computer should also select its option -->
+
+      <!-- Rock beats scissors, scissors beats paper, and paper beats rock.  -->
+
+    <script src="/main.js"></script>
+    <!-- <script src="/math.js"></script> -->
+</body>
+</html>
