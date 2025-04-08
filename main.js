@@ -10,11 +10,21 @@ const computerOptionEl = document.getElementById("computerOption");
 
 const options = ["rock", "paper", "scissors"];
 
+
+// get the current score
 const score = {
     user:0,
     computer:0
 }
 
+const savedData = JSON.parse(localStorage.getItem("currentScore"))
+
+score.user = savedData.user
+score.computer = savedData.computer
+
+document.getElementById("computerScore").innerHTML = score.computer
+  document.getElementById("userScore").innerHTML = score.user
+  
 function playGame(userSelected) {
   // get what the user has selected - done
 
@@ -50,7 +60,9 @@ function playGame(userSelected) {
     resultEl.innerHTML = "invalid input";
   }
 
+// save the current score
 
+localStorage.setItem("currentScore", JSON.stringify(score) )
   document.getElementById("computerScore").innerHTML = score.computer
   document.getElementById("userScore").innerHTML = score.user
 //   console.log(score)

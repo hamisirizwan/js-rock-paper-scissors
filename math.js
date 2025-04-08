@@ -17,7 +17,7 @@ const rounderDownNumber = Math.floor(5.6)
 
 console.log(rounderDownNumber)
 
-const rounderUpNumber = Math.ceil(5.1)
+const rounderUpNumber = Math.ceil(5.9)
 
 console.log(rounderUpNumber)
 
